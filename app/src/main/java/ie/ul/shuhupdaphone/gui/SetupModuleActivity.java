@@ -141,8 +141,8 @@ public class SetupModuleActivity extends Activity {
 		protected void onRestoreInstanceState(Bundle savedInstanceState) {
 			super.onRestoreInstanceState(savedInstanceState);
 			/* Exercise start: add restoration of time picker info */
-			startTimePicker.setHour(savedInstanceState.getInt(KEY_START_TIME, 9));
-		 	endTimePicker.setHour(savedInstanceState.getInt(KEY_END_TIME, 10));
+			//startTimePicker.setHour(savedInstanceState.getInt(KEY_START_TIME, 9));
+		 	//endTimePicker.setHour(savedInstanceState.getInt(KEY_END_TIME, 10));
 		 	/* Exercise end */
 		}
 
@@ -152,8 +152,8 @@ public class SetupModuleActivity extends Activity {
 		@Override
 		protected void onSaveInstanceState(Bundle outState) {
 			/* Exercise start: add restoration of time picker info */
-			outState.putInt(KEY_START_TIME, startTimePicker.getCurrentHour());
-			outState.putInt(KEY_END_TIME, endTimePicker.getCurrentHour());
+			//outState.putInt(KEY_START_TIME, startTimePicker.getHour());
+			//outState.putInt(KEY_END_TIME, endTimePicker.getHour());
 		 	/* Exercise end */
 			super.onSaveInstanceState(outState);
 		}
