@@ -16,17 +16,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.support.v4.app.NavUtils;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 	
 	Button addModuleButton;
 	Button addLectureButton;
@@ -49,10 +47,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_relative);
 
-		Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-		setSupportActionBar(myToolbar);
-
-        addModuleButton = (Button) findViewById(R.id.newModuleButton);
+	    addModuleButton = (Button) findViewById(R.id.newModuleButton);
         addLectureButton = (Button) findViewById(R.id.addLectureButton);
         viewScheduleButton = (Button) findViewById(R.id.viewScheduleButton);
         addFullScheduleButton = (Button) findViewById(R.id.addFullSchedule);
